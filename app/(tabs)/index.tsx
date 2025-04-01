@@ -1,15 +1,9 @@
 import { View, StyleSheet } from 'react-native';
 
-import Button from '@/components/button';
-import { Image } from 'expo-image';
-
+import Button from '@/components/button'; 
 import ImageViewer from '@/components/imageViewer';
 
-const PlaceholderImage = require('@/assets/images/background-image.jpg');
-
-
-
-//<Image source={require('../../assets/images/background-image.jpg')} style={styles.image} />
+const PlaceholderImage = require("@/assets/images/background-image.jpg");
 
 export default function Index() {
   return (
@@ -18,8 +12,8 @@ export default function Index() {
         <ImageViewer imgSource={PlaceholderImage} />
       </View>
       <View style={styles.footerContainer}>
-        <Button label="Escolha a foto" />
-        <Button label="Use esta foto" />
+        <Button label="Choose a photo" />
+        <Button label="Use this photo" />
       </View>
     </View>
   );
@@ -33,14 +27,10 @@ const styles = StyleSheet.create({
   },
   imageContainer: {
     flex: 1,
+    paddingTop: 28,
   },
-  image: {
-    width: 320,
-    height: 440,
-    borderRadius: 18,
-  },
-  footerContainer:{
-    flex: 1/3,
+  footerContainer: {
+    flex: 1 / 3,
     alignItems: 'center',
   },
 });
